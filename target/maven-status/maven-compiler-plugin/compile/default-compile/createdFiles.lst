@@ -1,0 +1,7 @@
+com\register\page\Locators.class
+com\register\page\GoogleSearchDynamicPath.class
+com\register\page\HandlingUploadFile.class
+com\register\page\HandlingDropdownBox.class
+com\register\page\HandlingFrames.class
+com\register\page\CustomizeXpath.class
+com\register\page\HandlingAlertPopups.class
