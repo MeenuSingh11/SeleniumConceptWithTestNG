@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.Practise.AnnotationTestNG">
+      <class name="com.TestNG.Practise.DependsOnMethodsConceptTestNG">
         <methods>
-          <include name="googleLogoTest"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="loginHomePageTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.TestNG.Practise.AnnotationTestNG -->
+      </class> <!-- com.TestNG.Practise.DependsOnMethodsConceptTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
