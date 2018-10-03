@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7707" started-at="2018-09-25T19:27:10Z" finished-at="2018-09-25T19:27:18Z">
+  <suite name="Default suite" duration-ms="12990" started-at="2018-10-03T18:20:52Z" finished-at="2018-10-03T18:21:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7707" started-at="2018-09-25T19:27:10Z" finished-at="2018-09-25T19:27:18Z">
-      <class name="com.TestNG.Practise.GoogleTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestNG.Practise.GoogleTest@7dc7cbad]" name="setUp" is-config="true" duration-ms="6589" started-at="2018-09-25T23:27:10Z" finished-at="2018-09-25T23:27:17Z">
+    <test name="Default test" duration-ms="12990" started-at="2018-10-03T18:20:52Z" finished-at="2018-10-03T18:21:05Z">
+      <class name="com.TestNG.Practise.AnnotationTestNG">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestNG.Practise.AnnotationTestNG@7dc7cbad]" name="setup" is-config="true" duration-ms="6168" started-at="2018-10-03T22:20:52Z" finished-at="2018-10-03T22:20:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="googleTitleTest()[pri:0, instance:com.TestNG.Practise.GoogleTest@7dc7cbad]" name="googleTitleTest" duration-ms="20" started-at="2018-09-25T23:27:17Z" finished-at="2018-09-25T23:27:17Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="googleLogoTest()[pri:0, instance:com.TestNG.Practise.AnnotationTestNG@7dc7cbad]" name="googleLogoTest" duration-ms="57" started-at="2018-10-03T22:20:59Z" finished-at="2018-10-03T22:20:59Z">
+          <exception class="junit.framework.AssertionFailedError">
             <message>
-              <![CDATA[title is not matched expected [Google123] but found [Google]]]>
+              <![CDATA[expected:<false> but was:<true>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: title is not matched expected [Google123] but found [Google]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at com.TestNG.Practise.GoogleTest.googleTitleTest(GoogleTest.java:34)
+              <![CDATA[junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at com.TestNG.Practise.AnnotationTestNG.googleLogoTest(AnnotationTestNG.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,15 +50,27 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestNG.Practise.GoogleTest@7dc7cbad]" name="tearDown" is-config="true" duration-ms="1064" started-at="2018-09-25T23:27:17Z" finished-at="2018-09-25T23:27:18Z">
+        </test-method> <!-- googleLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestNG.Practise.AnnotationTestNG@7dc7cbad]" name="tearDown" is-config="true" duration-ms="852" started-at="2018-10-03T22:20:59Z" finished-at="2018-10-03T22:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.TestNG.Practise.GoogleTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestNG.Practise.AnnotationTestNG@7dc7cbad]" name="setup" is-config="true" duration-ms="5024" started-at="2018-10-03T22:21:00Z" finished-at="2018-10-03T22:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="googleTitleTest()[pri:0, instance:com.TestNG.Practise.AnnotationTestNG@7dc7cbad]" name="googleTitleTest" duration-ms="9" started-at="2018-10-03T22:21:05Z" finished-at="2018-10-03T22:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestNG.Practise.AnnotationTestNG@7dc7cbad]" name="tearDown" is-config="true" duration-ms="857" started-at="2018-10-03T22:21:05Z" finished-at="2018-10-03T22:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestNG.Practise.AnnotationTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
