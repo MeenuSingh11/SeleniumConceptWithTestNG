@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE Suite SYSTEM "http://testing.org/testing-1.0.dtd">
+
+
+<Suite name = "Yahoo test automatio suite">
+	<test name = "yahoo test">
+
+  			<parameter name = "url" value = "https://login.yahoo.com/"/>
+  			<parameter name = "emailID" value = "meenu@gmail.com"/>
+  
+ 			 <Classes>
+				  <Class  name = "com.TestNG.Practise.ParameterizedTestNG">
+ 			 </Classes>
+
+
+	</test>
+</Suite>
