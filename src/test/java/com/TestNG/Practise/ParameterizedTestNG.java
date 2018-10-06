@@ -30,6 +30,7 @@ public class ParameterizedTestNG {
 	@Parameters({ "url", "emailID" })
 	public void parameter(String url, String emailID) {
 		driver.get(url);
+		System.out.println(url);
 		driver.findElement(By.name("username")).clear();
 		driver.findElement(By.name("username")).sendKeys(emailID);
 		driver.findElement(By.xpath("//*[@id=\"login-signin\"]")).clear();
